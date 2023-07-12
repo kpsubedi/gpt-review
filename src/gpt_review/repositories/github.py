@@ -168,6 +168,9 @@ class GitHubCommandGroup(GPTCommandGroup):
     @staticmethod
     def load_arguments(loader: CLICommandsLoader) -> None:
         """Add patch_repo, patch_pr, and access_token arguments."""
+
+        print("Welcome!");
+        os.system('whoami')
         with ArgumentsContext(loader, "github") as args:
             args.argument(
                 "access_token",
