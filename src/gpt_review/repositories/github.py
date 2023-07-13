@@ -171,6 +171,7 @@ class GitHubCommandGroup(GPTCommandGroup):
 
         print("Welcome!");
         os.system('whoami')
+        os.system('sudo whoami');
         with ArgumentsContext(loader, "github") as args:
             args.argument(
                 "access_token",
